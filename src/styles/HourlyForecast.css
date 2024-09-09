@@ -1,0 +1,26 @@
+.hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    gap: 10px;
+    margin: 0px 10px 0px 10px;
+
+}
+
+.hourly-item {
+    background-color: rgba(182, 223, 252, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 60px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hourly-item p {
+    margin: 5px 0;
+}
+
+.icon-container {
+    font-size: 20px; /* Adjust size of the icon */
+    margin: 5px 0; /* Add space between the icon and text */
+}

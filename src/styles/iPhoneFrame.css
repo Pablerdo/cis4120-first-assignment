@@ -1,0 +1,50 @@
+
+
+.iphone {
+    width: 390px; /* iPhone 14 screen width */
+    height: 844px; /* iPhone 14 screen height */
+    border-radius: 40px;
+    border: 16px solid black;
+    background-color: white;
+    position: relative;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 30px;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notch-camera {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notch-speaker {
+    width: 60px;
+    height: 5px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.iphone-screen {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+}
