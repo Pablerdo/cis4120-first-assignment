@@ -8,9 +8,9 @@ function Header({ city }: HeaderProps) {
     return (
         <header className="header">
             <header className="cityTemp">
-                <h3>{city}</h3>
+                <h2>{city}</h2>
                 <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center' }}>
-                    <h1 style={{fontSize: 40}}>15&deg;C</h1>
+                    <h1 style={{fontSize: 50}}>15&deg;C</h1>
                     <h1 style={{fontSize: 20}}>/ 59&deg;F</h1>
                 </div>
             </header>

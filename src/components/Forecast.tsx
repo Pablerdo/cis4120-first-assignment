@@ -1,5 +1,5 @@
 import '../styles/Forecast.css';
-import { FaSun, FaCloudSun, FaCloudRain, FaCloud } from 'react-icons/fa'; // Import icons from React Icons
+import { FaSun, FaCloudSun, FaCloudRain, FaCloud } from 'react-icons/fa';
 
 interface ForecastDay {
     day: string;
@@ -19,7 +19,6 @@ function Forecast() {
         { day: 'Sun', hi: 28, low: 14, condition: 'Rainy' },
     ];
 
-    // Function to render appropriate icon based on weather condition
     const renderIcon = (condition: string) => {
         switch (condition) {
             case 'Sunny':
@@ -43,7 +42,7 @@ function Forecast() {
                     <div className="forecast-details">
                         {renderIcon(dayData.condition)}
                         <p>{dayData.low}°C</p>
-                        <span className="temp-separator">|</span> {/* Vertical line */}
+                        <span className="temp-separator">|</span>
                         <p>{dayData.hi}°C</p>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import { FaSun, FaCloudRain, FaCloud } from 'react-icons/fa'; // Import icons fr
 interface HourlyData {
     hour: string;
     temp: number;
-    icon: JSX.Element; // Use JSX Element to represent the icon
+    icon: JSX.Element;
 }
 
 function HourlyForecast() {
@@ -29,7 +29,7 @@ function HourlyForecast() {
             {hourlyData.map((data, index) => (
                 <div className="hourly-item" key={index}>
                     <p>{data.hour}</p>
-                    <div className="icon-container">{data.icon}</div> {/* Display the weather icon */}
+                    <div className="icon-container">{data.icon}</div>
                     <p>{data.temp}°C</p>
                 </div>
             ))}
