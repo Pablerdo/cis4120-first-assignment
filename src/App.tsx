@@ -26,6 +26,7 @@ interface HourlyData {
 }
 
 
+
 function App() {
     const cities = ['Orlando', 'Philadelphia', 'New York', 'San Francisco'];
 
