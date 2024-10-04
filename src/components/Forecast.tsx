@@ -8,7 +8,11 @@ interface ForecastDay {
     condition: string;
 }
 
-function Forecast({ days }: ForecastDay[]) {
+interface ForecastProps {
+    days: ForecastDay[];
+}
+
+function Forecast({days}: ForecastProps) {
     const renderIcon = (condition: string) => {
         switch (condition) {
             case 'Sunny':
@@ -26,7 +30,7 @@ function Forecast({ days }: ForecastDay[]) {
 
     return (
         <div className="forecast">
-            {days.map((dayData, index) => (
+            {days.map((dayData: ForecastDay, index: number) => (
                 <div className="forecast-day" key={index}>
                     <p className="day-name">{dayData.day}</p>
                     <div className="forecast-details">

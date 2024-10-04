@@ -7,13 +7,13 @@ interface HourlyData {
 }
 
 interface HourlyForecastProps {
-    hourlyData: HourlyData[];
+    hours: HourlyData[];
 }
 
 function HourlyForecast({ hours }: HourlyForecastProps) {
     return (
         <div className="hourly-forecast">
-            {hours.map((data, index) => (
+            {hours.map((data: HourlyData, index: number) => (
                 <div className="hourly-item" key={index}>
                     <p>{data.hour}</p>
                     <div className="icon-container">{data.icon}</div>
