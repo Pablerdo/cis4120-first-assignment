@@ -5,7 +5,6 @@ interface CurrentWeatherProps {
 }
 
 function CurrentWeather({ condition }: CurrentWeatherProps) {
-
     return (
         <div className="current-weather">
             {condition}

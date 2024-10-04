@@ -8,17 +8,7 @@ interface ForecastDay {
     condition: string;
 }
 
-function Forecast() {
-    const days: ForecastDay[] = [
-        { day: 'Today', hi: 25, low: 17, condition: 'Cloudy' },
-        { day: 'Tue', hi: 27, low: 16, condition: 'Sunny' },
-        { day: 'Wed', hi: 23, low: 13, condition: 'Rainy' },
-        { day: 'Thu', hi: 26, low: 14, condition: 'Partly Cloudy' },
-        { day: 'Fri', hi: 29, low: 12, condition: 'Sunny' },
-        { day: 'Sat', hi: 27, low: 13, condition: 'Rainy' },
-        { day: 'Sun', hi: 28, low: 14, condition: 'Rainy' },
-    ];
-
+function Forecast({ days }: ForecastDay[]) {
     const renderIcon = (condition: string) => {
         switch (condition) {
             case 'Sunny':

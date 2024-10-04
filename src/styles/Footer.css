@@ -1,0 +1,29 @@
+
+.iphone-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: #d3d3d3; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px; /* Conforming to the iPhone shape */
+}
+
+.footer-dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #2296f3; /* Blue color for inactive dots */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-dot.active {
+    background-color: #ffffff; /* White color for the active dot */
+}
+
+

@@ -1,18 +1,59 @@
+/*.header {*/
+/*    height: 50%; !* Take up half of the iPhone frame's height *!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: start;*/
+/*    align-items: flex-start;*/
+/*    background-image: url(../assets/orlando.jpeg);*/
+/*    background-size: cover; !* Make sure the image covers the entire header *!*/
+/*    background-position: center; !* Center the image *!*/
+/*    color: white;*/
+/*    border-bottom: 1px solid #ccc; !* Optional: add a subtle border to separate the header *!*/
+/*    box-sizing: border-box; !* Ensure padding and borders are included in the height *!*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1); !* Adjust the size and opacity of the shadow *!*/
+
+/*}*/
+
+/*.header {*/
+/*    height: 50%; !* Original height *!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: start;*/
+/*    align-items: flex-start;*/
+/*    background-image: url(../assets/IMG_84F4B837299E-1.jpeg);*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    color: white;*/
+/*    border-bottom: 1px solid #ccc;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);*/
+/*    cursor: pointer; !* Add pointer to indicate clickability *!*/
+/*    transition: height 0.5s ease, font-size 0.5s ease;*/
+/*}*/
+
 .header {
-    height: 50%; /* Take up half of the iPhone frame's height */
+    height: 50%; /* Original height */
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    background-image: url(../assets/IMG_84F4B837299E-1.jpeg);
-    background-size: cover; /* Make sure the image covers the entire header */
-    background-position: center; /* Center the image */
+    background-size: cover;
+    background-position: center;
     color: white;
-    border-bottom: 1px solid #ccc; /* Optional: add a subtle border to separate the header */
-    box-sizing: border-box; /* Ensure padding and borders are included in the height */
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
     border-radius: 15px;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1); /* Adjust the size and opacity of the shadow */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Add pointer to indicate clickability */
+    transition: height 0.5s ease, font-size 0.5s ease;
+}
 
+
+.header.expanded {
+    height: 100%; /* Expanded to cover the entire frame */
+    border-radius: 0; /* Remove border-radius when expanded */
 }
 
 .cityTemp {
