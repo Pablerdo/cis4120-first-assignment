@@ -3,7 +3,7 @@ import Header from './components/Header';
 import CurrentWeather from './components/CurrentWeather';
 import Forecast from './components/Forecast';
 import { useState } from 'react';
-import IPhoneFrame from "./components/iPhoneFrame";
+import IPhoneFrame from "./components/IPhoneFrame";
 import HourlyForecast from "./components/HourlyForecast";
 import {FaCloud, FaCloudRain, FaCloudSun, FaSun} from "react-icons/fa";
 
